@@ -1,4 +1,4 @@
-package QA_GURU;
+package qaguru;
 
 import com.codeborne.selenide.Configuration;
 import org.junit.jupiter.api.AfterAll;
@@ -8,6 +8,9 @@ import org.openqa.selenium.chrome.ChromeOptions;
 import static com.codeborne.selenide.Selenide.closeWebDriver;
 
 public class TestBase {
+
+    public static final String BASE_URL = "https://demoqa.com/";
+    public static final String BASE_URL_SIMPLE = "https://qa-guru.github.io/one-page-form/text-box.html";
 
     @BeforeAll
     public static void beforeAll(){
